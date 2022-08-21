@@ -1,0 +1,93 @@
+@import '../../style/variables.scss';
+
+.searchpanel {
+    max-width: 425px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    padding: 25px;
+    margin-top: 30px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        margin-bottom: 18px;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.1666;
+        color: #000000;
+    }
+
+    &__controls {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__row {
+        display: flex;
+    }
+
+    &__input {
+        flex: 0 1 250px;
+        margin-right: 25px;
+        width: 100%;
+        padding: 10px 10px;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        max-height: 38px;
+        color: rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    &__buttontopage {
+        margin-top: 15px;
+        background: gray;
+    }
+
+    &____buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__error {
+        color: red;
+        font-size: 15px;
+    }
+
+    &__gotopage {
+        margin-top: 15px;
+    }
+
+    &__messages {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+
+        .message__notfound {
+            color: #9F0013;
+        }
+
+        .message__found {
+            color: #03710E;
+            margin-right: 25px;
+            flex: 0 1 250px;
+
+        }
+
+        .message__error {
+            color: #9F0013;
+        }
+    }
+
+
+}
